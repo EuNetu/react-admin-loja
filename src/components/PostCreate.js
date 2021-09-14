@@ -1,13 +1,15 @@
 import React from "react";
-import {Create, SimpleForm, TextInput, DateInput} from 'react-admin';
+import {Create, SimpleForm, TextInput, DateInput, TextField, DateField} from 'react-admin';
 
 const PostCreate = (props) => {
     return(
         <Create title='Create a Post' {...props}>
             <SimpleForm>
-                <TextInput source='title' />
-                <TextInput multiline source='body' />
-                <DateInput label='Published' source='publishedAt'/>
+                <TextField source='modelo' />
+                <TextField source='marca' />
+                <TextField multiline source='descrição' />
+                <TextField source='preço' />
+                <DateField source='data da publicacao' />
             </SimpleForm>
         </Create>
     )

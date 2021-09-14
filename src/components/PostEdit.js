@@ -1,14 +1,15 @@
 import React from "react";
-import { Edit, SimpleForm, TextInput, DateInput} from 'react-admin';
+import {Edit, SimpleForm, TextInput, DateInput, TextField, DateField} from 'react-admin';
 
 const PostEdit = (props) => {
     return(
         <Edit title='Edit Post' {...props}>
             <SimpleForm>
-                <TextInput disabled source='id' />
-                <TextInput source='title' />
-                <TextInput multiline source='body' />
-                <DateInput label='Published' source='publishedAt'/>
+                <TextInput source='modelo' />
+                <TextInput source='marca' />
+                <TextInput source='descrição' />
+                <TextInput source='preço' />
+                <DateInput label='Data da Publicação' source='data da publicacão' />
             </SimpleForm>
         </Edit>
     )

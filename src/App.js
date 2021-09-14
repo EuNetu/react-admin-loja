@@ -7,15 +7,18 @@ import PostEdit from './components/PostEdit'
 import UserList from './components/UserList'
 import UserCreate from './components/UserCreate'
 import UserEdit from './components/UserEdit'
+import PhoneAndroidSharpIcon from '@material-ui/icons/PhoneAndroidSharp'
+import Dashboard from './components/Dashboard'
 
 function App() {
   return (
-    <Admin dataProvider={restProvider('http://localhost:3000')}>
+    <Admin dashboard={Dashboard} dataProvider={restProvider('http://localhost:3000')}>
         <Resource
             name='posts'
             list={PostList}
             create={PostCreate}
             edit={PostEdit}
+            icon={PhoneAndroidSharpIcon}
         />
         <Resource
             name='users'
