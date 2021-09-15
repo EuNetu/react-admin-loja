@@ -14,7 +14,7 @@ function App() {
   return (
     <Admin dashboard={Dashboard} dataProvider={restProvider('http://localhost:3000')}>
         <Resource
-            name='posts'
+            name='postagens'
             list={PostList}
             create={PostCreate}
             edit={PostEdit}

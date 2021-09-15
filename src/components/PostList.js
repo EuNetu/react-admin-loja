@@ -3,12 +3,8 @@ import {
     List,
     Datagrid,
     TextField,
-    DateField,
     EditButton,
     DeleteButton,
-    ReferenceInput,
-    SelectInput,
-    TextInput
 } from 'react-admin'
 /*
 const postFilters = [
@@ -26,10 +22,11 @@ const PostList = (props) => {
                 <TextField source='modelo' />
                 <TextField source='marca' />
                 <TextField source='descrição' />
+                <TextField source='cor' />
                 <TextField source='preço' />
-                <DateField source='data da publicação' />
-                <EditButton basePath='/posts'/>
-                <DeleteButton basePath='/posts'/>
+                <TextField source='contato' />
+                <EditButton basePath='/postagens'/>
+                <DeleteButton basePath='/postagens'/>
             </Datagrid>
         </List>
         )
